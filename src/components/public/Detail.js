@@ -14,7 +14,7 @@ RMService.getCharactersById(id)
 .then((data) => setPersonaje(data))
 
 
-},[id])
+},[])
 
 const detailCard = {
 width: '80%',

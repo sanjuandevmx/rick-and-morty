@@ -11,7 +11,7 @@ useEffect(()=> {
   .then((data) =>setPersonajes(data.results ))
   .catch((error) => console.log(error + "error al cargar el api"));
 
-}, [personajes])
+}, [])
 
   const cardList = personajes.map((m) => <Card personaje={m} key={m.id} /> ); 
 

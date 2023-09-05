@@ -18,12 +18,12 @@ export const Navbar = () => {
             <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
               <li>
               <a className="nav-link px-2 text-white">
-              <Link to="/about">About</Link>
+              <Link to="/">Home</Link>
                 </a>
               </li>
               <li>
               <a className="nav-link px-2 text-white">
-              <Link to="/about">About</Link>
+              <Link to="/About">About</Link>
                 </a>
               </li>
               <li>
@@ -58,9 +58,7 @@ export const Navbar = () => {
               <button type="button" className="btn btn-outline-light me-2">
                 Login
               </button>
-              <button type="button" className="btn btn-warning">
-                Sign-up
-              </button>
+           <Link to= "/user-form" type="button" className="btn btn-warning">Sign Up</Link>
             </div>
           </div>
         </div>
