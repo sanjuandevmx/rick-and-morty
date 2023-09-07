@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 export const Navbar = () => {
   return (
     <div>
@@ -17,29 +18,25 @@ export const Navbar = () => {
             </span>
             <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
               <li>
-              <a className="nav-link px-2 text-white">
-              <Link to="/">Home</Link>
-                </a>
-              </li>
-              <li>
-              <a className="nav-link px-2 text-white">
-              <Link to="/About">About</Link>
-                </a>
-              </li>
-              <li>
-              <a className="nav-link px-2 text-white">
-              <Link to="/Faq">FAQ</Link>
-                </a>
+                
+                  <Link to="/" className="nav-link px-2 text-white">Home</Link>
                 
               </li>
               <li>
-                <a className="nav-link px-2 text-white">
-                <Link to="/Pricing">Pricing</Link>
-                </a>
-               
+                
+                  <Link to="/characters" className="nav-link px-2 text-white">Characters</Link>
+                
               </li>
-           
-            
+              <li>
+                
+                  <Link to="/locations" className="nav-link px-2 text-white">Locations</Link>
+              
+              </li>
+              <li>
+                
+                  <Link to="/chapters" className="nav-link px-2 text-white">Chapters</Link>
+                
+              </li>
             </ul>
 
             <form
@@ -58,7 +55,9 @@ export const Navbar = () => {
               <button type="button" className="btn btn-outline-light me-2">
                 Login
               </button>
-           <Link to= "/user-form" type="button" className="btn btn-warning">Sign Up</Link>
+              <Link to="/user-form" type="button" className="btn btn-warning">
+                Sign Up
+              </Link>
             </div>
           </div>
         </div>

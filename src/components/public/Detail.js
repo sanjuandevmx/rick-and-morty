@@ -4,17 +4,17 @@ import RMService from '../../services/RM.Service';
 
 export const Detail =() => {
 
-const [personaje, setPersonaje] = useState({});
+  const [personaje, setPersonaje] = useState({});
 
-const {id} = useParams();
-const {pathname} = useLocation();
-
-useEffect(() => {
-RMService.getCharactersById(id)
-.then((data) => setPersonaje(data))
-
-
-},[])
+  const {id} = useParams();
+  const {pathname} = useLocation();
+  
+  useEffect(() => {
+    RMService.getCharactersById(id)
+    .then((data) => setPersonaje(data))
+    
+    
+    },[])
 
 const detailCard = {
 width: '80%',
@@ -34,7 +34,8 @@ return (
           <p className="card-text"><small className=""> Specie: {personaje.species}</small></p>
           <p className="card-text"><small className=""> Status: {personaje.status}</small></p>
           <p className="card-text"><small className=""> Gender: {personaje.gender}</small></p>
-          <p className="card-text"><small className=""> Created: { new Date(personaje.created).toLocaleDateString}</small></p>
+          {/* <p className="card-text"><small className=""> Created: {new Date(personaje.created).toLocaleDateString}</small></p>  */}
+          <p className="card-text"><small className=""> Created: {personaje.created}</small></p>
         </div>
         <div className="btn-group" style={{'marginLeft': '15px'}}>
               <button

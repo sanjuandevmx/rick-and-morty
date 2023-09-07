@@ -12,6 +12,7 @@ export const UserForm = () => {
   }
 useEffect (() => {
     const {password} = form;
+    
     setAreEquals(password === passwordConfirmation);
 }, [passwordConfirmation])
 

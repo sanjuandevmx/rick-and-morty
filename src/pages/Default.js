@@ -1,5 +1,7 @@
-const Default = () => {
-    return <h1>Default</h1>
-}
+import React from 'react'
 
-export default Default;
+export default function Default() {
+  return (
+    <div>Default</div>
+  )
+}

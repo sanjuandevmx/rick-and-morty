@@ -10,6 +10,14 @@ class RMService{
         const response = await fetch(API_RM.CHARACTER_BY_ID(id));
          return response.json();    
     }
+    async getAllEpisodes(){
+        const response = await fetch(API_RM.EPISODES());
+        return response.json();
+    }
+    async getAllLocations(){
+        const response = await fetch(API_RM.LOCATIONS());
+        return response.json();
+    }
 
 }
 

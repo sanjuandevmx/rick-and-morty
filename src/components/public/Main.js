@@ -36,7 +36,7 @@ export class Main extends Component {
           </div>
         </section>
 
-        <Cards/>
+   
 
       </main>
 
