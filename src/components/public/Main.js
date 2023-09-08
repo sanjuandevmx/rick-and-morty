@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Cards from "./Cards";
+import { Carrousel } from "./Carrousel";
 
 export class Main extends Component {
   constructor(props) {
@@ -7,19 +8,18 @@ export class Main extends Component {
     this.state = { personajes: [] };
   }
 
-  componentDidMount() {
-    
-  }
-
+  componentDidMount() {}
 
   render() {
     return (
       <main>
-
+        <Carrousel />
         <section className="py-5 text-center container">
+        <h1 className="fw-light">Rick & Morty</h1>
           <div className="row py-lg-5">
+         
             <div className="col-lg-6 col-md-8 mx-auto">
-              <h1 className="fw-light">Rick & Morty</h1>
+             
               <p className="lead text-body-secondary">
                 Rick y Morty (en inglés: Rick and Morty) es una serie de
                 televisión estadounidense de animación para adultos creada por
@@ -36,10 +36,8 @@ export class Main extends Component {
           </div>
         </section>
 
-   
-
+       
       </main>
-
     );
   }
 }
